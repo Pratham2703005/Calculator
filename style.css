@@ -58,6 +58,7 @@
 .calc form .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  place-items: center;
   gap: 0.5rem;
 }
 
@@ -99,8 +100,12 @@ form input.equal {
 }
 
 @media (max-width: 400px) {
+  .calc{
+    width: 100%;
+  }
   .calc form .buttons input {
     height: 2rem;
+    width: 90%;
     font-size: 1rem;
   }
 
